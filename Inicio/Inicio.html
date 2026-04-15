@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Salud Integral - Inicio</title>
+    <style>
+        /* --- CSS: Estilos Base (Copiados de Nosotros.html) --- */
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding-top: 80px;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+        }
+
+        /* --- CSS: Navegación --- */
+        .navbar {
+            background-color: #ffffff;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .navbar .logo { color: #2ecc71; font-size: 1.6rem; font-weight: bold; display: flex; align-items: center; }
+        .navbar .logo span { color: #3498db; margin-left: 5px; }
+        .navbar ul { list-style: none; display: flex; margin: 0; }
+        .navbar ul li { margin-left: 25px; }
+        .navbar ul li a { color: #555; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        .navbar ul li a:hover { color: #3498db; }
+
+        /* --- CSS: Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, #1a5276 0%, #3498db 100%);
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; }
+
+        /* --- CSS: Características --- */
+        .servicios {
+            max-width: 1100px;
+            margin: -50px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .card-servicio {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card-servicio:hover { transform: translateY(-5px); }
+        .card-servicio h3 { color: #1a5276; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Clínica<span>Salud</span></div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Sistema Integral de Gestión Clínica Digital</h1>
+        <p>Centralizamos, integramos y automatizamos los procesos médicos para una atención más segura y eficiente. [cite: 41]</p>
+    </header>
+
+    <section class="servicios">
+        <div class="card-servicio">
+            <h3>Gestión de Pacientes</h3>
+            <p>Registro y consulta rápida de información para evitar duplicidad de datos. [cite: 85, 86]</p>
+        </div>
+        <div class="card-servicio">
+            <h3>Historial Clínico</h3>
+            <p>Acceso seguro y en tiempo real a la información médica completa del paciente. [cite: 91, 92]</p>
+        </div>
+        <div class="card-servicio">
+            <h3>Citas y Agenda</h3>
+            <p>Optimización de tiempos con un sistema de agenda médica inteligente. [cite: 89, 101]</p>
+        </div>
+    </section>
+
+</body>
+</html>
